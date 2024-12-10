@@ -25,12 +25,12 @@
       color: rgba(255,255,255,.70);
       animation: animated-text 10s 1s 1 normal both,
       animated-cursor 600ms linear infinite;
-      margin-top: 100px;
+      margin-top: 10px;
       text-transform: uppercase;
   }
   @keyframes animated-text{
     from{width: 0;}
-    to{width: 1005px;}
+    to{width: 488px;}
     }
     
     
@@ -52,112 +52,13 @@
   }
   @keyframes animated{
     from{width: 0;}
-    to{width: 1140px;}
+    to{width: 500px;}
     }
     
     
     @keyframes cursor{
     from{border-right-color: rgba(255,255,255,.75);}
     to{border-right-color: transparent;}
-    }
-  
-    .calendar {
-      margin: auto;
-      width: 380px;
-      padding: 1rem;
-      background: #eccece00;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      margin-top: -20px;
-      margin-bottom: 30px;
-      animation: change 8s ease-in infinite;
-  
-    }
-    @keyframes change {
-      0%{
-          background-position: 0 50%;
-      }
-      50%{
-          background-position: 100% 50%;
-      }
-      100% {
-          background-position: 0 50%;
-      }
-    }
-    
-    .calendar main {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .calendar ul {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      text-align: center;
-    }
-    .calendar ul li {
-      width: calc(100% / 7);
-      margin-top: 25px;
-      position: relative;
-      z-index: 2;
-    }
-    .calendar .game {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    #prev,
-    #next {
-      width: 20px;
-      height: 20px;
-      position: relative;
-      border: none;
-      background: transparent;
-      cursor: pointer;
-    }
-    #prev::before,
-    #next::before {
-      content: "";
-      width: 50%;
-      height: 50%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      border-style: solid;
-      border-width: 0.25em 0.25em 0 0;
-      border-color: #ccc;
-    }
-    #next::before {
-      transform: translate(-50%, -50%) rotate(45deg);
-    }
-    #prev::before {
-      transform: translate(-50%, -50%) rotate(-135deg);
-    }
-    #prev:hover::before,
-    #next:hover::before {
-      border-color: #000;
-    }
-    .days {
-      font-weight: 600;
-    }
-    .dates li.today {
-      color: #fff;
-    }
-    .dates li.today::before {
-      content: "";
-      width: 2rem;
-      height: 2rem;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: #000;
-      border-radius: 50%;
-      z-index: -1;
-    }
-    .dates li.inactive {
-      color: #ccc;
     }
     a{
       color: #fff;
@@ -214,16 +115,6 @@
       margin-top: 500px;
       margin-right: 1070px;
       font-family: Garamond, serif;
-    }
-  
-    @keyframes glow {
-      from {
-        text-shadow: 0 0 10px #fffafab9, 0 0 20px #0077ffdc, 0 0 30px #03bcf4, 0 0 40px #03bcf4, 0 0 50px #03bcf4, 0 0 60px #03bcf4, 0 0 70px #03bcf4;
-      }
-      
-      to {
-        text-shadow: 0 0 20px #ffffffb6, 0 0 30px #0077ffdc, 0 0 40px #0079ff, 0 0 50px #0079ff, 0 0 60px #0079ff, 0 0 70px #0079ff, 0 0 80px #0079ff;
-      }
     }
     .content{
       margin-top: 10%;
@@ -316,12 +207,6 @@
     margin-top: 140px;
     margin-left: 61px;
     margin-bottom: 100px;
-  }
-  hr.po {
-    border: 1px solid rgb(0, 0, 0);
-    margin-top: 120px;
-    margin-left: 10px;
-    margin-right: 10px;
   }
   .blue-bg {
     background-color: blue;
